@@ -1,0 +1,110 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/IRANSansWeb.woff2) format("woff2")
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    direction: rtl;
+    background-color: #151515;
+    color: white;
+    font-family: IRANSans;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    background: none;
+    border: none;
+}
+button img{
+    width: 16px;
+    height: auto;
+    transform: rotate(45deg);
+    transition: all 150ms;
+}
+.active .header .question{
+    color: #f4843f;
+    transition: all 150ms;
+}
+.active .header img{
+    transform: rotate(0deg);
+    transition: all 150ms;
+}
+
+.container{
+    width: 100%;
+    max-width: 656px;
+    margin: 0 auto;
+}
+.q-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 12.6rem 0;
+}
+.title-section{
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+.title-section .title{
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+.title-section .subtitle{
+    font-size: 1.2rem;
+    font-weight: 200;
+    word-spacing: 0.1rem;
+    margin-bottom: 1.6rem;
+    opacity: 0.7;
+}
+.box{
+    background-color: #ffffff05;
+    padding: 1.6rem;
+    border-radius: 1.2rem;
+    border: 1px solid #33353d;
+    margin-bottom: 0.8rem;
+    transition: all 500ms;
+}
+.header{
+    cursor: pointer;
+}
+.box .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box .header .question{
+    font-size: 1.3rem;
+    display: inline-block;
+}
+.box .text-wrapper{
+    padding-top: 0;
+    padding-left: 1.6rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: padding-top 750ms, max-height 500ms;
+}
+
+.active .text-wrapper{
+    padding-top: 0.8rem;
+    max-height: 100px;
+    transition: padding-top 300ms, max-height 1000ms;
+}
+.box .text-wrapper .text{
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    color: #b6b6b6;
+}
