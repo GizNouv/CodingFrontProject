@@ -1,0 +1,175 @@
+/* @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb.woff2') format("woff2")
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/IRANSansWeb_UltraLight.woff2') format('woff2')
+} */
+*, *::after , *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: IRANSans;
+    direction: rtl;
+    background-color: #151515;
+    color: #fff;
+    overflow: hidden;
+}
+ul , li{
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    border-radius: 0.6rem;
+    width: 100%;
+    height: 100%;
+}
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.popular-section {
+    margin: 1.0rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.2rem;
+}
+.heading .title {
+    padding-left: 1.6rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.heading .switch-button {
+    color: #fff;
+    border: 0.1rem solid #ffffff1f;
+    border-radius: 3.5rem;
+}
+.heading .switch-button button {
+    padding: 0.4rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.heading .switch-button button:first-child {
+    background: #282828;
+    border-radius: 3.5rem;
+}
+.items-list ul {
+ display: flex;
+ justify-content: space-between;
+ height: 252px;
+ /* gap: 32px; */
+}
+.items-list ul li:first-child {
+    opacity: 1!important;
+    border: 2px solid #fff;
+    border-radius: 0.6rem;
+}
+.items-list ul li{
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.items-list ul li:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.information{
+    padding: 2.4rem 0;
+}
+.information ul li {
+    position: relative;
+}
+/* .information ul li .background-wrapper {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.8;
+    width: 120vw;
+    min-width: 1920px;
+    height: 500px;
+    background: linear-gradient(270deg, #151515 0%, rgba(0, 0, 0, 0) 68.71%), linear-gradient(180deg, #151515 0%, rgba(0, 0, 0, 0) 54.79%), linear-gradient(90deg, #151515 0%, rgba(0, 0, 0, 0) 16.41%), url(/assets/image/image\ 5.png);
+    transform: translatex(600px);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+.information .textContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+.information .title{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.information .textContent .enName , .director {
+    color: #a1a1a1;
+    font-size: 1.2rem;
+}
+.information .textContent .extraInfo {
+    display: flex;
+    gap: 0.8rem;
+}
+.information .textContent .extraInfo *{
+    background: #282828;
+    padding: 0.4rem 1.6rem; 
+    border-radius: 2.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.information .textContent .extraInfo .rate {
+    background: rgba(77,171,86,.12);
+    color: #1cb561;
+}
+.information .textContent .brief {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.information .episodes ul {
+    display: flex;
+    gap: 3.2rem;
+    height: 180px;
+}
+.information .episodes ul li{
+    position: relative;
+    display: inline-block;
+}
+.information .episodes ul li::before {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    display: inline-block;
+    content : "1:0:10";
+    padding: 0.4rem 0.8rem;
+    background: rgba(0,0,0,.5);
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+}
+.information .episodes ul li a div{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
